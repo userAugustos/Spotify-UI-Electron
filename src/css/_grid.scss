@@ -1,0 +1,12 @@
+body{
+  display: grid;
+  // DB = Dash Board
+  // CT = Content
+  // PL = Player
+  grid-template-columns: 23% auto;
+  grid-template-rows: auto 13%;
+
+  grid-template-areas: 
+  'DB CT'
+  'PL PL';
+}

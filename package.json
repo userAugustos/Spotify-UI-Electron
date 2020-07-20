@@ -1,0 +1,22 @@
+{
+  "name": "spotify-electron",
+  "version": "1.0.0",
+  "description": "a spotify UI clone with electronjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./src/main.js"
+  },
+  "author": "Felipe Augustos",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "electron": "^9.0.5"
+  },
+  "devDependencies": {
+    "electron-reloader": "^1.0.1"
+  },
+  "files": [
+    "**/*",
+    "build/icons.*"
+  ]
+}

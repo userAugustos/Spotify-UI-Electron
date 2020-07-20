@@ -1,0 +1,76 @@
+section.dash-board {
+  grid-area: DB;
+
+  min-width: 150px;
+  background: $darked-background;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  align-items: center;
+
+  padding: 1em 1.5em;
+  color: $grey-text;
+
+  li{
+    cursor: default;
+    p{
+      font-size: .9em; 
+      font-weight: bolder; 
+    }
+  }
+}
+.dash-board .browse-pages {
+  @extend .default-width-display-dashboard;
+  svg {
+    margin: 0 15px 0 0;
+    font-size: 1.2em;
+  }
+  li {
+    cursor: default;
+    display: flex;
+    align-items: center;
+
+    margin: 15px 0;
+
+    &:hover {
+      color: $main-text;
+    }
+  }
+}
+
+.dash-board .browse-songs {
+  margin: 15px 0;
+  @extend .default-width-display-dashboard;
+
+  span{
+    font-size: .7em;
+  }
+  ul {
+    li {
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:hover{
+        color:$main-text;
+      }
+
+      div{
+        padding: 5px;
+        border-radius: 50%;
+        background: rgba(139, 140, 140, .1);
+        svg{
+          max-width: 90%;
+        }
+      }
+    }
+  }
+  .disable{
+    .playing{
+      display: none;
+    }
+  }
+}

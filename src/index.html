@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="dash-board">
+      <div class="browse-pages">
+        <ul>
+          <li id="home">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <p>Home</p>
+          </li>
+          <li id="browse">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <p>Browse</p>
+          </li>
+          <li id="radio">
+            <i class="fa fa-server" aria-hidden="true"></i>
+            <p>Radio</p>
+          </li>
+        </ul>
+      </div>
+      <div class="browse-songs">
+        <span>YOUR LIBRARY</span>
+        <ul class="library">
+          <li id="made-for-u" class="">
+            <p>Made For You</p>
+
+            <div class="playing">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li id="recent-played" class="disable">
+            <p>Recently Played</p>
+            <div class="playing">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li id="liked-songs" class="disable">
+            <p>Liked Songs</p>
+            <div class="playing">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li id="albums" class="disable">
+            <p>Albums</p>
+            <div class="playing">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li id="artist" class="disable">
+            <p>Artists</p>
+            <div class="playing">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </li>
+          <li id="podcasts" class="disable">
+            <p>Podcasts</p>
+            <div class="playing">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="playlists">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="new-playlist"></div>
+    </section>
+    <section class="content"></section>
+    <section class="player"></section>
+
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
